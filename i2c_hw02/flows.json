@@ -1,0 +1,205 @@
+[
+    {
+        "id": "45ca89b097feaa14",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "415eb93b05c34098",
+        "type": "inject",
+        "z": "45ca89b097feaa14",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"message\":$now()}",
+        "payloadType": "jsonata",
+        "x": 270,
+        "y": 280,
+        "wires": [
+            [
+                "7a1fce667e387801",
+                "dd316f3069b78984"
+            ]
+        ]
+    },
+    {
+        "id": "3775e718d3aeb558",
+        "type": "debug",
+        "z": "45ca89b097feaa14",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "7a1fce667e387801",
+        "type": "http request",
+        "z": "45ca89b097feaa14",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "query",
+        "url": "http://localhost:8000/lcd/",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "senderr": false,
+        "x": 550,
+        "y": 280,
+        "wires": [
+            [
+                "3775e718d3aeb558"
+            ]
+        ]
+    },
+    {
+        "id": "dd316f3069b78984",
+        "type": "debug",
+        "z": "45ca89b097feaa14",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "3b5d735d97c50588",
+        "type": "debug",
+        "z": "45ca89b097feaa14",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "dd83613b2d5ccea6",
+        "type": "change",
+        "z": "45ca89b097feaa14",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t\"message\":payload\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 560,
+        "y": 400,
+        "wires": [
+            [
+                "3b5d735d97c50588",
+                "7a1fce667e387801"
+            ]
+        ]
+    },
+    {
+        "id": "83505636e238da04",
+        "type": "mqtt in",
+        "z": "45ca89b097feaa14",
+        "name": "",
+        "topic": "tec/rpi/a01706095",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "0edcb02ee30c7a9a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "dd83613b2d5ccea6"
+            ]
+        ]
+    },
+    {
+        "id": "c64d26be1da02aa0",
+        "type": "mqtt in",
+        "z": "45ca89b097feaa14",
+        "name": "",
+        "topic": "tec/rpi/gnu/linux",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "0edcb02ee30c7a9a",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 300,
+        "y": 440,
+        "wires": [
+            [
+                "dd83613b2d5ccea6"
+            ]
+        ]
+    },
+    {
+        "id": "0edcb02ee30c7a9a",
+        "type": "mqtt-broker",
+        "name": "HivemMQ Broker",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    }
+]
