@@ -3,10 +3,7 @@
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- TABLE OF CONTENTS -->
@@ -122,11 +119,6 @@ https://stackoverflow.com/questions/59482708/can-i-set-the-address-of-an-i2c-lcd
 * https://github.com/othneildrew/Best-README-Template/blob/master/BLANK_README.md
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/naominietov/embedded_linux.svg?style=for-the-badge
-[contributors-url]: https://github.com/naominietov/embedded_linux/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/naominietov/embedded_linux.svg?style=for-the-badge
-[forks-url]: https://github.com/naominietov/embedded_linux/network/members
 [stars-shield]: https://img.shields.io/github/stars/naominietov/embedded_linux.svg?style=for-the-badge
 [stars-url]: https://github.com/naominietov/embedded_linux/stargazers
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
