@@ -45,69 +45,45 @@ This assignment seeks to enable the I2C ports on the Raspberry in order to write
 
 In order to run this project, some software prerequisites that need to be installed (in case they are not already installed):
 
-* The HTTP Server
-  ```sh
-  npm install npm@latest -g
+* Pip
+```sh
+sudo apt install python3-pip -y
+```
+* I2C Tools
+```sh
+ sudo apt-get install i2c-tools
   ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
+ To verify the I2C tools installation run 
+ ```sh 
+ sudo i2cdetect -y 1 
+ ```
+* CircuitPython I2C library
+CircuitPython(https://github.com/dhalbert/CircuitPython_LCD) library for HD77480 LCD character displays with an I2C backpack which supports I2C model PCF8574. For other models such as I2C MC2300XXX the Adafruit(https://github.com/adafruit/Adafruit_CircuitPython_CharLCD) library is supported. 
+* HTTP Server
+In order to run the web app using Python we used FastAPI[https://fastapi.tiangolo.com/#installation].
+```sh
+  pip install fastapi
+  pip install "uvicorn[standard]"
+  ```
+* Node Red
+```
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)![image](https://user-images.githubusercontent.com/64105772/167316004-0f5ab937-eea4-45a5-8d87-fba480a384a2.png)
+```
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+To run the project, connect 
+```
+python -m uvicorn main:app --reload
+```
+Open NodeRED
+```
+node-red-start
+
+```
 
 _For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -116,7 +92,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the GNU License. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -125,9 +101,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Naomi Nieto Vega - a01706095@tec.mx
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/naominietov/embedded_linux](https://github.com/naominietov/embedded_linux)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -136,13 +112,14 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Ing. Jesús Antonio Pérez Reyes](antonio.perez@tec.mx)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+## Useful Links
+
+*
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -166,15 +143,6 @@ sudo apt-get install i2c-tools
 sudo i2cdetect -y 1
 ```
 
-To start the HTTP server
-```
-python -m uvicorn main:app --reload
-```
-Open NodeRED
-```
-node-red-start
-
-```
 
 Useful links:
 Adafruit not compatible
