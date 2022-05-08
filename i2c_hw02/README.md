@@ -1,4 +1,4 @@
-# Assignment 2. Show messages on LCD via I2C remotely
+# 📚 Assignment 2. Show messages on LCD via I2C remotely
 
 <div id="top"></div>
 
@@ -7,6 +7,7 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- TABLE OF CONTENTS -->
+## 📌 Table of Contents
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -17,7 +18,6 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -28,14 +28,14 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## 🔍 About The Project
 
 This assignment seeks to enable the I2C ports on the Raspberry in order to write to the LCD using I2C module remotely. 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
+### ✅ Prerequisites and Installation
 
 In order to run this project, some software prerequisites that need to be installed (in case they are not already installed):
 
@@ -68,10 +68,11 @@ bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/mast
 ```
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## 💻 Usage example
 
 1. Make the physical connections.
-2. To run the project, run the following command to connect to the server
+2. Download main.py file
+3. To run the project, open a new bash and run the following command to connect to the server
 ```sh
 python -m uvicorn main:app --reload
 ```
@@ -80,10 +81,12 @@ python -m uvicorn main:app --reload
 ```sh
 node-red-start
 ```
+and upload the flows.json file.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
-## Contact
+## 📩 Contact
 
 Name: Naomi Estefanía Nieto Vega
 ID: A01706095
@@ -93,13 +96,13 @@ Email: a01706095@tec.mx
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## 🎉 Acknowledgments
 
 * Porfessor Ing. Jesús Antonio Pérez Reyes [contact](antonio.perez@tec.mx)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-## References
+## 📎 References
 
 * Adafruit not compatible
 https://stackoverflow.com/questions/59482708/can-i-set-the-address-of-an-i2c-lcd-in-circuitpython-for-something-other-than-20
