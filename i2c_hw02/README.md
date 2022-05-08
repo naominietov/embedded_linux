@@ -25,11 +25,10 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#references">References</a></li>
   </ol>
 </details>
 
@@ -63,6 +62,8 @@ CircuitPython(https://github.com/dhalbert/CircuitPython_LCD) library for HD77480
 In order to run the web app using Python we used FastAPI[https://fastapi.tiangolo.com/#installation].
 ```sh
   pip install fastapi
+  ```
+  ```sh
   pip install "uvicorn[standard]"
   ```
 * Node Red
@@ -73,17 +74,14 @@ bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/mast
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-To run the project, connect 
-```
+To run the project, run the following command to connect to the server
+```sh
 python -m uvicorn main:app --reload
 ```
-Open NodeRED
-```
+Then, to open NodeRED run:
+```sh
 node-red-start
-
 ```
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -95,7 +93,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 Distributed under the GNU License. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
@@ -117,9 +114,13 @@ Project Link: [https://github.com/naominietov/embedded_linux](https://github.com
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-## Useful Links
+## References
 
-*
+* Adafruit not compatible
+https://stackoverflow.com/questions/59482708/can-i-set-the-address-of-an-i2c-lcd-in-circuitpython-for-something-other-than-20
+* https://github.com/dhalbert/CircuitPython_LCD
+* https://github.com/dbrgn/RPLCD
+* https://github.com/othneildrew/Best-README-Template/blob/master/BLANK_README.md
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -129,25 +130,5 @@ Project Link: [https://github.com/naominietov/embedded_linux](https://github.com
 [forks-url]: https://github.com/naominietov/embedded_linux/network/members
 [stars-shield]: https://img.shields.io/github/stars/naominietov/embedded_linux.svg?style=for-the-badge
 [stars-url]: https://github.com/naominietov/embedded_linux/stargazers
-[issues-shield]: https://img.shields.io/github/issues/naominietov/embedded_linux.svg?style=for-the-badge
-[issues-url]: https://github.com/naominietov/embedded_linux/issues
-[license-shield]: https://img.shields.io/github/license/naominietov/embedded_linux.svg?style=for-the-badge
-[license-url]: https://github.com/naominietov/embedded_linux/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/naominietov/
-[product-screenshot]: images/screenshot.png
-
-To run the 
-```
-sudo apt-get install i2c-tools
-sudo i2cdetect -y 1
-```
-
-
-Useful links:
-Adafruit not compatible
-https://stackoverflow.com/questions/59482708/can-i-set-the-address-of-an-i2c-lcd-in-circuitpython-for-something-other-than-20
-
-https://github.com/dhalbert/CircuitPython_LCD
-https://github.com/dbrgn/RPLCD
-https://github.com/othneildrew/Best-README-Template/blob/master/BLANK_README.md
