@@ -1,11 +1,12 @@
 # 📚 Assignment 2. Show messages on LCD via I2C remotely
 
 <div id="top"></div>
-* TE2003B. System Design on Chip 
-* Embedded Linux
 
 <!-- PROJECT SHIELDS -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
+
+* TE2003B. System Design on Chip 
+* Embedded Linux
 
 <!-- TABLE OF CONTENTS -->
 ## 📌 Table of Contents
