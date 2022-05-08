@@ -21,7 +21,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
     <li><a href="#references">References</a></li>
@@ -81,16 +80,7 @@ python -m uvicorn main:app --reload
 ```sh
 node-red-start
 ```
-
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- LICENSE -->
-## License
-
-Distributed under the GNU License. 
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-- CONTACT -->
 ## Contact
@@ -105,7 +95,7 @@ Email: a01706095@tec.mx
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* Porfessor [Ing. Jesús Antonio Pérez Reyes](antonio.perez@tec.mx)
+* Porfessor Ing. Jesús Antonio Pérez Reyes [contact](antonio.perez@tec.mx)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
