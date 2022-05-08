@@ -106,6 +106,8 @@ https://stackoverflow.com/questions/59482708/can-i-set-the-address-of-an-i2c-lcd
 * https://github.com/dhalbert/CircuitPython_LCD
 * https://github.com/dbrgn/RPLCD
 * https://github.com/othneildrew/Best-README-Template/blob/master/BLANK_README.md
+* https://pinout.xyz/pinout/i2c
+* https://fastapi.tiangolo.com/tutorial/first-steps/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [stars-shield]: https://img.shields.io/github/stars/naominietov/embedded_linux.svg?style=for-the-badge
