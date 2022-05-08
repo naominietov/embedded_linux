@@ -1,6 +1,8 @@
 # 📚 Assignment 2. Show messages on LCD via I2C remotely
 
 <div id="top"></div>
+* TE2003B. System Design on Chip 
+* Embedded Linux
 
 <!-- PROJECT SHIELDS -->
 [![LinkedIn][linkedin-shield]][linkedin-url]
@@ -87,9 +89,9 @@ and upload the flows.json file.
 <!-- CONTACT -->
 ## 📩 Contact
 
-Name: Naomi Estefanía Nieto Vega
-ID: A01706095
-Email: a01706095@tec.mx
+* Name: Naomi Estefanía Nieto Vega
+* ID: A01706095
+* Email: a01706095@tec.mx
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
