@@ -3,7 +3,6 @@
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
-[![Stargazers][stars-shield]][stars-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- TABLE OF CONTENTS -->
@@ -113,7 +112,5 @@ https://stackoverflow.com/questions/59482708/can-i-set-the-address-of-an-i2c-lcd
 * https://fastapi.tiangolo.com/tutorial/first-steps/
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[stars-shield]: https://img.shields.io/github/stars/naominietov/embedded_linux.svg?style=for-the-badge
-[stars-url]: https://github.com/naominietov/embedded_linux/stargazers
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/naominietov/
