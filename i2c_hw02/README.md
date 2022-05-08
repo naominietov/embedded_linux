@@ -46,22 +46,23 @@ sudo apt install python3-pip -y
 ```
 * I2C Tools
 ```sh
- sudo apt-get install i2c-tools
-  ```
- To verify the I2C tools installation run 
- ```sh 
- sudo i2cdetect -y 1 
+sudo apt-get install i2c-tools
+```
+To verify the I2C tools installation run 
+```sh 
+sudo i2cdetect -y 1 
  ```
 * CircuitPython I2C library
-CircuitPython(https://github.com/dhalbert/CircuitPython_LCD) library for HD77480 LCD character displays with an I2C backpack which supports I2C model PCF8574. For other models such as I2C MC2300XXX the Adafruit(https://github.com/adafruit/Adafruit_CircuitPython_CharLCD) library is supported. 
+CircuitPython(https://github.com/dhalbert/CircuitPython_LCD) library for HD77480 LCD character displays with an I2C backpack which supports I2C model PCF8574. 
+For other models such as I2C MC2300XXX the Adafruit(https://github.com/adafruit/Adafruit_CircuitPython_CharLCD) library is supported. 
 * HTTP Server
 In order to run the web app using Python we used FastAPI[https://fastapi.tiangolo.com/#installation].
 ```sh
-  pip install fastapi
+pip install fastapi
   ```
-  ```sh
-  pip install "uvicorn[standard]"
-  ```
+```sh
+pip install "uvicorn[standard]"
+```
 * Node Red
 ```
 bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)![image](https://user-images.githubusercontent.com/64105772/167316004-0f5ab937-eea4-45a5-8d87-fba480a384a2.png)
@@ -94,21 +95,19 @@ Distributed under the GNU License.
 <!-- CONTACT -->
 ## Contact
 
-Naomi Nieto Vega - a01706095@tec.mx
-
-Project Link: [https://github.com/naominietov/embedded_linux](https://github.com/naominietov/embedded_linux)
+Name: Naomi Estefanía Nieto Vega
+ID: A01706095
+Email: a01706095@tec.mx
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [Ing. Jesús Antonio Pérez Reyes](antonio.perez@tec.mx)
+* Porfessor [Ing. Jesús Antonio Pérez Reyes](antonio.perez@tec.mx)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 ## References
 
