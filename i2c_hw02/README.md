@@ -3,46 +3,12 @@
 <div id="top"></div>
 
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/naominietov/embedded_linux">
-    <img src="images/hw02.png" alt="hw02" width="80" height="80">
-  </a>
-
-<h3 align="center">Show messages on LCD via I2C remotely</h3>
-
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/naominietov/embedded_linux"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/naominietov/embedded_linux">View Demo</a>
-    ·
-    <a href="https://github.com/naominietov/embedded_linux/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/naominietov/embedded_linux/issues">Request Feature</a>
-  </p>
-</div>
-
-
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -67,8 +33,6 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -82,8 +46,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get a local copy of this project and be able to run it, follow next steps.
 
 ### Prerequisites
 
