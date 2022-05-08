@@ -53,10 +53,10 @@ To verify the I2C tools installation run
 sudo i2cdetect -y 1 
  ```
 * CircuitPython I2C library
-CircuitPython(https://github.com/dhalbert/CircuitPython_LCD) library for HD77480 LCD character displays with an I2C backpack which supports I2C model PCF8574. 
-For other models such as I2C MC2300XXX the Adafruit(https://github.com/adafruit/Adafruit_CircuitPython_CharLCD) library is supported. 
-* HTTP Server
-In order to run the web app using Python we used FastAPI[https://fastapi.tiangolo.com/#installation].
+[CircuitPython](https://github.com/dhalbert/CircuitPython_LCD) library for HD77480 LCD character displays with an I2C backpack which supports I2C model PCF8574. 
+For other models such as I2C MC2300XXX the [Adafruit](https://github.com/adafruit/Adafruit_CircuitPython_CharLCD) library is supported. 
+* FastAPI and HTTP Server
+In order to run the web app using Python we used [FastAPI](https://fastapi.tiangolo.com/#installation).
 ```sh
 pip install fastapi
   ```
@@ -71,18 +71,18 @@ bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/mast
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-To run the project, run the following command to connect to the server
+1. Make the physical connections.
+2. To run the project, run the following command to connect to the server
 ```sh
 python -m uvicorn main:app --reload
 ```
-Then, to open NodeRED run:
+2. Connect to [HiveMQ MQTT Broker Client](http://www.hivemq.com/demos/websocket-client/)
+3. Then, to open NodeRED run:
 ```sh
 node-red-start
 ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- LICENSE -->
 ## License
