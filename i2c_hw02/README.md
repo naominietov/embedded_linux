@@ -103,7 +103,7 @@ In order to run the web app using Python we used [FastAPI](https://fastapi.tiang
 <!-- ACKNOWLEDGMENTS -->
 ## 🎉 Acknowledgments
 
-* Porfessor Ing. Jesús Antonio Pérez Reyes [contact](mailto:antonio.perez@tec.mx)
+* Professor Ing. Jesús Antonio Pérez Reyes [contact](mailto:antonio.perez@tec.mx)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
