@@ -42,7 +42,7 @@ async def startup_event():
     # Talk to the LCD at I2C address 0x27.
     lcd = LCD(I2CPCF8574Interface(board.I2C(), 0x27), lcd_columns, lcd_rows)
 
-    # Uploading data
+    # Set context for being use in the HTTP requests
     context.logger = logger
     context.lcd = lcd
 
@@ -52,12 +52,11 @@ def read_root(message: str = ""):
     logger = context.logger
     lcd = context.lcd
 
-    # TO-DO validate input
+    # TODO validate input
     logger.info(f"Message to write: {message}")
     lcd.clear()
     lcd.print(message)
     
-    # lcd.blink = True
     logger.info("Message written")
 
     return {"result": "OK", "msg": message}

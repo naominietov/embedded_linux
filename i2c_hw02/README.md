@@ -42,32 +42,35 @@ This assignment seeks to enable the I2C ports on the Raspberry in order to write
 In order to run this project, some software prerequisites that need to be installed (in case they are not already installed):
 
 * Pip
-```sh
-sudo apt install python3-pip -y
-```
+  ```shell
+  sudo apt install python3-pip -y
+  ```
+
 * I2C Tools
-```sh
-sudo apt-get install i2c-tools
-```
-To verify the I2C tools installation run 
-```sh 
-sudo i2cdetect -y 1 
- ```
+  ```shell
+  sudo apt-get install i2c-tools
+  ```
+
+  To verify the I2C tools installation run 
+  ```shell
+  sudo i2cdetect -y 1 
+  ```
+
 * CircuitPython I2C library
 [CircuitPython](https://github.com/dhalbert/CircuitPython_LCD) library for HD77480 LCD character displays with an I2C backpack which supports I2C model PCF8574. 
 For other models such as I2C MC2300XXX the [Adafruit](https://github.com/adafruit/Adafruit_CircuitPython_CharLCD) library is supported. 
+
 * FastAPI and HTTP Server
 In order to run the web app using Python we used [FastAPI](https://fastapi.tiangolo.com/#installation).
-```sh
-pip install fastapi
+  ```shell
+  pip install fastapi
+  pip install "uvicorn[standard]"
   ```
-```sh
-pip install "uvicorn[standard]"
-```
+  
 * Node Red
-```
-bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)![image](https://user-images.githubusercontent.com/64105772/167316004-0f5ab937-eea4-45a5-8d87-fba480a384a2.png)
-```
+  ```shell
+  bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)![image](https://user-images.githubusercontent.com/64105772/167316004-0f5ab937-eea4-45a5-8d87-fba480a384a2.png)
+  ```
 
 <!-- USAGE EXAMPLES -->
 ## 💻 Usage example
@@ -75,15 +78,15 @@ bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/mast
 1. Make the physical connections.
 2. Download main.py file
 3. To run the project, open a new bash and run the following command to connect to the server
-```sh
-python -m uvicorn main:app --reload
-```
+    ```shell
+    python -m uvicorn main:app --reload
+    ```
 2. Connect to [HiveMQ MQTT Broker Client](http://www.hivemq.com/demos/websocket-client/)
 3. Then, to open NodeRED run:
-```sh
-node-red-start
-```
-and upload the flows.json file.
+    ```shell
+    node-red-start
+    ```
+    and upload the flows.json file.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -100,7 +103,7 @@ and upload the flows.json file.
 <!-- ACKNOWLEDGMENTS -->
 ## 🎉 Acknowledgments
 
-* Porfessor Ing. Jesús Antonio Pérez Reyes [contact](antonio.perez@tec.mx)
+* Professor Ing. Jesús Antonio Pérez Reyes [contact](mailto:antonio.perez@tec.mx)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
